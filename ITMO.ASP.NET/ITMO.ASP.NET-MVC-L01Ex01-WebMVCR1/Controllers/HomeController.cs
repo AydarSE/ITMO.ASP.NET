@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ITMO.ASP.NET_MVC_L01Ex01_WebMVCR1.Models;
 
+
 namespace ITMO.ASP.NET_MVC_L01Ex01_WebMVCR1.Controllers
 {
     public class HomeController : Controller
@@ -22,5 +23,28 @@ namespace ITMO.ASP.NET_MVC_L01Ex01_WebMVCR1.Controllers
             ViewData["Mes"] = "хорошего настроения";
             return View(); 
         }
+
+        [HttpGet]
+        public ViewResult InputData() 
+        { 
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult InputData(Person p)
+        {
+            db.AddResponse(p);
+            return View("Hello", p);
+        }
+
+        private static PersonRepository db = new PersonRepository();
+
+        public ViewResult OutputData()
+        {
+            ViewBag.Pers = db.GetAllResponses;
+            ViewBag.Count = db.NumberOfPerson;
+            return View("ListPerson");
+        }
+
     }
 }
