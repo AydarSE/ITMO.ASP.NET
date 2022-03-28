@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.ASP.NET-L01Ex01-WebApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.ASP.NET-Lab02Ex1-RazorPagesMovie", "..\ITMO.ASP.NET-Lab02Ex1-RazorPagesMovie\ITMO.ASP.NET-Lab02Ex1-RazorPagesMovie.csproj", "{0C4EA53F-4D8E-44E2-A6BF-09293D9D12A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.ASP.NET-MVC-L01Ex01-WebMVCR1", "ITMO.ASP.NET-MVC-L01Ex01-WebMVCR1\ITMO.ASP.NET-MVC-L01Ex01-WebMVCR1.csproj", "{7AF6F061-A6BE-4436-B4DC-39FF2E02FF53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0C4EA53F-4D8E-44E2-A6BF-09293D9D12A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C4EA53F-4D8E-44E2-A6BF-09293D9D12A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C4EA53F-4D8E-44E2-A6BF-09293D9D12A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AF6F061-A6BE-4436-B4DC-39FF2E02FF53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AF6F061-A6BE-4436-B4DC-39FF2E02FF53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AF6F061-A6BE-4436-B4DC-39FF2E02FF53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AF6F061-A6BE-4436-B4DC-39FF2E02FF53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

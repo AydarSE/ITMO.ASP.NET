@@ -1,0 +1,26 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using ITMO.ASP.NET_MVC_L01Ex01_WebMVCR1.Models;
+
+namespace ITMO.ASP.NET_MVC_L01Ex01_WebMVCR1.Controllers
+{
+    public class HomeController : Controller
+    {
+        /*public string Index(string hel)
+        {
+            string Greeting = ModelClass.ModelHello() + ", " + hel;
+            return Greeting;
+        }*/
+
+        public ViewResult Index()
+        {
+            int hour = DateTime.Now.Hour;
+            ViewBag.Greeting = hour < 12 ? "Доброе утро" : "Добрый день";
+            ViewData["Mes"] = "хорошего настроения";
+            return View(); 
+        }
+    }
+}
